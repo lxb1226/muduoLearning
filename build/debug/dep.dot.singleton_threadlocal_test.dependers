@@ -1,0 +1,6 @@
+digraph "GG" {
+node [
+  fontsize = "12"
+];
+    "node30" [ label="singleton_threadlocal_test" shape="house"];
+}

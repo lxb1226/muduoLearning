@@ -1,0 +1,12 @@
+digraph "GG" {
+node [
+  fontsize = "12"
+];
+    "node19" [ label="threadlocalsingleton_test" shape="house"];
+    "node8" [ label="muduo_base" shape="diamond"];
+    "node19" -> "node8" // threadlocalsingleton_test -> muduo_base
+    "node103" [ label="pthread" shape="ellipse"];
+    "node8" -> "node103" // muduo_base -> pthread
+    "node104" [ label="rt" shape="ellipse"];
+    "node8" -> "node104" // muduo_base -> rt
+}

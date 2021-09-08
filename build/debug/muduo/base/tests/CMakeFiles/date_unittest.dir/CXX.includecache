@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/heyjude/workspace/projects/cpp/projects/muduoLearning/jmuduo/muduo/base/Date.h
+muduo/base/copyable.h
+-
+muduo/base/Types.h
+-
+
+/home/heyjude/workspace/projects/cpp/projects/muduoLearning/jmuduo/muduo/base/Types.h
+stdint.h
+-
+string
+-
+ext/vstring.h
+-
+ext/vstring_fwd.h
+-
+
+/home/heyjude/workspace/projects/cpp/projects/muduoLearning/jmuduo/muduo/base/copyable.h
+
+/home/heyjude/workspace/projects/cpp/projects/muduoLearning/jmuduo/muduo/base/tests/Date_unittest.cc
+muduo/base/Date.h
+-
+assert.h
+-
+stdio.h
+-
+

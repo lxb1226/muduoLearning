@@ -1,0 +1,8 @@
+digraph "GG" {
+node [
+  fontsize = "12"
+];
+    "node61" [ label="muduo_inspect" shape="diamond"];
+    "node64" [ label="inspector_test" shape="house"];
+    "node64" -> "node61" // muduo_inspect -> inspector_test
+}

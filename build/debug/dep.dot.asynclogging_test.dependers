@@ -1,0 +1,6 @@
+digraph "GG" {
+node [
+  fontsize = "12"
+];
+    "node20" [ label="asynclogging_test" shape="house"];
+}

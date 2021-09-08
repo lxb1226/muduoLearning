@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/heyjude/workspace/projects/muduo-learning/09/Thread.cpp
+Thread.h
+/home/heyjude/workspace/projects/muduo-learning/09/Thread.h
+iostream
+-
+
+/home/heyjude/workspace/projects/muduo-learning/09/Thread.h
+pthread.h
+-
+boost/function.hpp
+-
+
+/home/heyjude/workspace/projects/muduo-learning/09/Thread_test.cpp
+Thread.h
+/home/heyjude/workspace/projects/muduo-learning/09/Thread.h
+unistd.h
+/home/heyjude/workspace/projects/muduo-learning/09/unistd.h
+boost/bind.hpp
+-
+iostream
+-
+

@@ -1,0 +1,6 @@
+digraph "GG" {
+node [
+  fontsize = "12"
+];
+    "node23" [ label="blockingQueue_bench" shape="house"];
+}

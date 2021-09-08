@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/heyjude/workspace/projects/cpp/projects/muduoLearning/jmuduo/muduo/base/tests/TimeZone_unittest.cc
+muduo/base/TimeZone.h
+-
+stdio.h
+-
+string.h
+-
+strings.h
+-
+

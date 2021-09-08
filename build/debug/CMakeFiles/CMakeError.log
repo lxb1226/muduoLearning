@@ -1,0 +1,54 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/heyjude/workspace/projects/cpp/projects/muduoLearning/build/debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_05da3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_05da3.dir/build.make CMakeFiles/cmTC_05da3.dir/build
+make[1]: Entering directory '/home/heyjude/workspace/projects/cpp/projects/muduoLearning/build/debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_05da3.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -g -D_FILE_OFFSET_BITS=64 -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -rdynamic    -o CMakeFiles/cmTC_05da3.dir/CheckSymbolExists.cxx.o -c /home/heyjude/workspace/projects/cpp/projects/muduoLearning/build/debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/heyjude/workspace/projects/cpp/projects/muduoLearning/build/debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/heyjude/workspace/projects/cpp/projects/muduoLearning/build/debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:33: error: use of old-style cast [-Werror=old-style-cast]
+   return ((int*)(&pthread_create))[argc];
+                                 ^
+cc1plus: all warnings being treated as errors
+CMakeFiles/cmTC_05da3.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_05da3.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_05da3.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/heyjude/workspace/projects/cpp/projects/muduoLearning/build/debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_05da3/fast' failed
+make: *** [cmTC_05da3/fast] Error 2
+
+File /home/heyjude/workspace/projects/cpp/projects/muduoLearning/build/debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/heyjude/workspace/projects/cpp/projects/muduoLearning/build/debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_55727/fast"
+/usr/bin/make -f CMakeFiles/cmTC_55727.dir/build.make CMakeFiles/cmTC_55727.dir/build
+make[1]: Entering directory '/home/heyjude/workspace/projects/cpp/projects/muduoLearning/build/debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_55727.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -g -D_FILE_OFFSET_BITS=64 -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -rdynamic -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_55727.dir/CheckFunctionExists.cxx.o -c /home/heyjude/workspace/projects/cpp/projects/muduoLearning/build/debug/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_55727
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55727.dir/link.txt --verbose=1
+/usr/bin/c++  -g -D_FILE_OFFSET_BITS=64 -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -rdynamic -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_55727.dir/CheckFunctionExists.cxx.o  -o cmTC_55727 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_55727.dir/build.make:97: recipe for target 'cmTC_55727' failed
+make[1]: *** [cmTC_55727] Error 1
+make[1]: Leaving directory '/home/heyjude/workspace/projects/cpp/projects/muduoLearning/build/debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_55727/fast' failed
+make: *** [cmTC_55727/fast] Error 2
+
+

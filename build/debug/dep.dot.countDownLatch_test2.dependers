@@ -1,0 +1,6 @@
+digraph "GG" {
+node [
+  fontsize = "12"
+];
+    "node94" [ label="countDownLatch_test2" shape="house"];
+}
